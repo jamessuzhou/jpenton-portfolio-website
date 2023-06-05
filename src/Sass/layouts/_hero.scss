@@ -1,0 +1,64 @@
+/*
+=============== 
+Hero
+===============
+*/
+
+.hero {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: black;
+  background-image: url("../src/images/man-typing.jpg");
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hello-card {
+  color: white;
+  z-index: 1;
+  animation: disappear $mediumTime ease $longTime;
+}
+
+.whiteVeil {
+  z-index: 2;
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 100vh;
+  animation: widen $veryLongTime ease $longTime;
+  animation-fill-mode: forwards;
+  transition: opacity $longTime, visibility $longTime;
+}
+
+.greeting-card {
+  z-index: 3;
+  position: absolute;
+  animation: 1000ms ease 1200ms appear forwards;
+  opacity: 0;
+  border: 2px solid red;
+
+  max-width: 540px;
+
+
+  .arrows {
+    animation: 1000ms ease-in-out 1200 bounce;
+    animation-iteration-count: 3.5;
+  }
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+

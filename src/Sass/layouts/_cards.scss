@@ -1,0 +1,34 @@
+.hello-card {
+  color: white;
+  z-index: 1;
+  animation: disappear $mediumTime ease $longTime;
+}
+
+.whiteVeil {
+  z-index: 2;
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 100vh;
+  animation: widen $veryLongTime ease $longTime;
+  animation-fill-mode: forwards;
+  transition: opacity $longTime, visibility $longTime;
+}
+
+.make-websites {
+  z-index: 3;
+  position: absolute;
+  animation: 1000ms ease 1200ms appear forwards;
+  opacity: 0;
+
+  .arrows {
+    animation: 1000ms ease-in-out 1200 bounce;
+    animation-iteration-count: 3.5;
+  }
+}
+
+.fa-brands {
+  margin: 5px;
+}
+
+
