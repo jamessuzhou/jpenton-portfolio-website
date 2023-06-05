@@ -12,10 +12,9 @@ function App() {
       <Navbar_new />
       <Hero />
       <Portfolio />
-      {/* <About />
+      <About />
       <Services />
-      <Tours /> */}
-      {/* <Inquiries /> */}
+      <Tours />
       <Footer />
     </>
   );
