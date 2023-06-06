@@ -1,4 +1,4 @@
-import robot from "./assets/images/robot.jpeg";
+import robot from "../images/robot.jpeg";
 
 const Hero = () => {
   return (
