@@ -17,7 +17,7 @@ const Hero = () => {
             </div>
             <div className="col-md-4">
               <img
-                src="../src/images/robot.jpeg"
+                src="./images/robot.jpeg"
                 className="img-fluid rounded-start"
                 alt="..."
               />
