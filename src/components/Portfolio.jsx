@@ -1,5 +1,5 @@
 import Title from "./Title";
-import StarRating from "./Stars";
+// import StarRating from "./Stars";
 import { featuredTours } from "../data";
 
 const Portfolio = () => {
@@ -22,7 +22,7 @@ const Portfolio = () => {
                 <div className="tour-title">
                   <h4>{title}</h4>
                 </div>
-                <StarRating />
+                {/* <StarRating /> */}
                 <p>{text}</p>
                 <div className="tour-footer">
                   <p>
