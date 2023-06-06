@@ -1,6 +1,6 @@
-import tour1 from "./images/tour-1.jpeg";
-import tour2 from "./images/tour-2.jpeg";
-import tour3 from "./images/tour-3.jpeg";
+import project1 from "./images/project1-ohmyfood.jpg";
+import project2 from "./images/project2-booki.jpg";
+import project3 from "./images/project3-nsc.jpg";
 import tour4 from "./images/tour-4.jpeg";
 import tour5 from "./images/tour-5.jpeg";
 import tour6 from "./images/tour-6.jpeg";
@@ -41,7 +41,7 @@ export const ourServices = [
 export const featuredTours = [
   {
     id: 1,
-    image: tour1,
+    image: project1,
     date: "ausgust 26th 2020",
     title: "Tibet Adventure",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
@@ -51,7 +51,7 @@ export const featuredTours = [
   },
   {
     id: 2,
-    image: tour2,
+    image: project2,
     date: "october 1th, 2020",
     title: "best of java",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
@@ -61,7 +61,7 @@ export const featuredTours = [
   },
   {
     id: 3,
-    image: tour3,
+    image: project3,
     date: "september 15th, 2020",
     title: "explore hong kong",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
