@@ -1,11 +1,12 @@
 import robot from "../images/robot.jpeg";
+import manTyping from "../images/man-typing.jpg";
 
 const Hero = () => {
   return (
     <section>
       <div
         className="hero d-flex justify-content-center align-items-center"
-        style="background-image: url(./assets/images/man-typing.jpg)"
+        style={{ backgroundImage: `url(${manTyping})` }}
       >
         <div className="hello-card square-box display-4">Hello!</div>
 
