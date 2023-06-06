@@ -1,3 +1,4 @@
+
 @keyframes widen {
   from {
     width: 0%;
@@ -92,7 +93,6 @@ Hero
   background-size: cover;
   position: relative;
   background-color: black;
-  background-image: url("../src/images/man-typing.jpg");
 }
 
 .hero::before {

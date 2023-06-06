@@ -1,9 +1,13 @@
 import robot from "../images/robot.jpeg";
+import manTyping from "../images/man-typing.jpg";
 
 const Hero = () => {
   return (
     <section>
-      <div className="hero d-flex justify-content-center align-items-center">
+      <div
+        className="hero d-flex justify-content-center align-items-center"
+        style="background-image: manTyping;"
+      >
         <div className="hello-card square-box display-4">Hello!</div>
 
         <div className="whiteVeil"></div>
@@ -16,7 +20,11 @@ const Hero = () => {
               <p className="text text-muted">Last updated 3 mins</p>
             </div>
             <div className="col-md-4">
-              <img src={robot} className="img-fluid rounded-start" alt="..." />
+              <img
+                src={robot}
+                className="img-fluid rounded-start"
+                alt="wind up robot in pastel colours"
+              />
             </div>
           </div>
         </div>
