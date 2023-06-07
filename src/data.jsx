@@ -1,9 +1,16 @@
 import project1 from "./images/project1-ohmyfood.jpg";
 import project2 from "./images/project2-booki.jpg";
 import project3 from "./images/project3-nsc.jpg";
-import tour4 from "./images/tour-4.jpeg";
-import tour5 from "./images/tour-5.jpeg";
-import tour6 from "./images/tour-6.jpeg";
+
+
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaSass,
+  FaBootstrap,
+} from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
 
 export const pageLinks = [
   { id: 1, href: "#home", text: "home" },
@@ -42,61 +49,58 @@ export const featuredTours = [
   {
     id: 1,
     image: project1,
-    date: "ausgust 26th 2020",
-    title: "Tibet Adventure",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
-    location: "china",
-    length: "6 days",
-    price: "$2100",
+    icon: [<FaHtml5 />, <FaCss3Alt />, <FaSass />],
+    title: "ohmyfood",
+    text: "A fully responsive website using html5, css3 and Sass. This website uses several animations, including fade-in, spinners and a slider.",
+    link: "https://ohmyfood-uploaded-jpenton.netlify.app",
+    github: "https://github.com/jamessuzhou/ohmyfood-website",
   },
   {
     id: 2,
     image: project2,
-    date: "october 1th, 2020",
-    title: "best of java",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
-    location: "indonesia",
-    length: "6 days",
-    price: "$1400",
+    icon: [<FaHtml5 />, <FaCss3Alt />],
+    title: "Booki",
+    text: "This hotel-booking landing page uses html5, css3 and is fully responsive.",
+    link: "https://booki-jpenton.netlify.app/",
+    github: "https://github.com/jamessuzhou/Booki_website",
   },
   {
     id: 3,
     image: project3,
-    date: "september 15th, 2020",
-    title: "explore hong kong",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
-    location: "hong kong",
-    length: "8 days",
-    price: "$5000",
+    icon: [<FaHtml5 />, <FaCss3Alt />, <IoLogoJavascript />, <FaBootstrap />],
+    title: "NSC technical test",
+    text: "Made as part of technical interview test, this website uses Javascript to create a carousel and to generate the 'latest posts section'. It is fully responsive and uses bootstrap for several sections",
+    link: "https://nsc-website-technical-challenge.netlify.app/",
+    github: "github.com/jamessuzhou/nsc-website2",
   },
-  {
-    id: 4,
-    image: tour4,
-    date: "december 5th, 2019",
-    title: "kenya highlights",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
-    location: "kenya",
-    length: "20 days",
-    price: "$3300",
-  },
-  {
-    id: 5,
-    image: tour5,
-    date: "ausgust 26th 2020",
-    title: "Taj Mahal Experience",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
-    location: "kenya",
-    length: "6 days",
-    price: "$2100",
-  },
-  {
-    id: 6,
-    image: tour6,
-    date: "ausgust 26th 2020",
-    title: "Safari",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
-    location: "india",
-    length: "6 days",
-    price: "$2100",
-  },
+  // {
+  //   id: 4,
+  //   image: tour4,
+  //   date: "december 5th, 2019",
+  //   title: "kenya highlights",
+  //   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
+  //   location: "kenya",
+  //   length: "20 days",
+  //   price: "$3300",
+  // },
+  // {
+  //   id: 5,
+  //   image: tour5,
+  //   date: "ausgust 26th 2020",
+  //   title: "Taj Mahal Experience",
+  //   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
+  //   location: "kenya",
+  //   length: "6 days",
+  //   price: "$2100",
+  // },
+  // {
+  //   id: 6,
+  //   image: tour6,
+  //   date: "ausgust 26th 2020",
+  //   title: "Safari",
+  //   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
+  //   location: "india",
+  //   length: "6 days",
+  //   price: "$2100",
+  // },
 ];

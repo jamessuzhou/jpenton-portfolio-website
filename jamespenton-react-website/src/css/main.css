@@ -28,14 +28,13 @@
 }
 @keyframes bounce {
   0% {
-    transform: translateY(-20px);
+    transform: translateY(20px);
   }
   50% {
     transform: translateY(0px);
   }
-
   100% {
-    transform: translateY(-20px);
+    transform: translateY(20px);
   }
 }
 body {
@@ -76,17 +75,6 @@ img {
 .make-websites .arrows {
   animation: 1000ms ease-in-out 1200 bounce;
   animation-iteration-count: 3.5;
-  text-decoration: none;
-}
-
-.arrows a {
-  text-decoration: none;
-  color: darkgray;
-}
-
-.arrows a:hover {
-  size: 20%;
-  color: black;
 }
 
 .fa-brands {
@@ -104,6 +92,7 @@ Hero
   background-size: cover;
   position: relative;
   background-color: black;
+  background-image: url("../src/images/man-typing.jpg");
 }
 
 .hero::before {
@@ -125,7 +114,7 @@ Hero
 .whiteVeil {
   z-index: 2;
   position: absolute;
-  background: rgb(240, 240, 240);
+  background: #fff;
   width: 0;
   height: 100vh;
   animation: widen 2000ms ease 1000ms;
@@ -138,9 +127,7 @@ Hero
   position: absolute;
   animation: 1000ms ease 1200ms appear forwards;
   opacity: 0;
-  padding: 10px;
-  border: 2px solid darkgrey;
-  background-color: #fff;
+  border: 2px solid red;
   max-width: 540px;
 }
 .greeting-card .arrows {
@@ -210,8 +197,7 @@ html {
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: var(--clr-white);
   color: var(--clr-grey-1);
   line-height: 1.5;
@@ -258,6 +244,7 @@ h4 {
 }
 
 p {
+  margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
 
@@ -278,9 +265,9 @@ p {
     font-size: 1rem;
   }
   h1,
-  h2,
-  h3,
-  h4 {
+h2,
+h3,
+h4 {
     line-height: 1;
   }
 }
@@ -314,6 +301,10 @@ p {
 .section-title {
   text-align: center;
   margin-bottom: 4rem;
+}
+
+.section-title h2 {
+  text-transform: lowercase;
 }
 
 .section-title span {
@@ -351,7 +342,7 @@ About
     column-gap: 2rem;
   }
   .about-img,
-  .about-info {
+.about-info {
     margin-bottom: 0;
   }
 }
@@ -442,24 +433,19 @@ Featured Tours
   background: var(--clr-grey-10);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
-  border-radius: 25px;
-  overflow: hidden;
-  height: 400px;
 }
 
 .tour-card:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transform: scale(1.02);
-  cursor: pointer;
 }
 
 .tour-img-container {
   position: relative;
-  height: 50%;
 }
 
 .tour-img {
-  height: 100%;
+  height: 15rem;
   object-fit: cover;
 }
 
@@ -476,12 +462,6 @@ Featured Tours
 
 .tour-info {
   padding: 1.25rem 1.5rem;
-  height: 40%;
-}
-
-.tour-desc {
-  height: 100%;
-  overflow: hidden;
 }
 
 /* additional css for different layout*/
@@ -493,6 +473,7 @@ Featured Tours
 
 .tour-title p,
 .tour-title h4 {
+  margin-bottom: 0.75rem;
   line-height: 1.2;
 }
 
@@ -503,21 +484,19 @@ Featured Tours
 /* end of additional css for different layout*/
 .tour-footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  height: 10%;
 }
 
-.tour-footer a {
+.tour-footer p {
   line-height: 0;
   margin-bottom: 0;
   text-transform: capitalize;
   color: var(--clr-primary-5);
-  font-weight: 600;
 }
 
-.tour-footer a span {
+.tour-footer p span {
   margin-right: 0.25rem;
 }
 
@@ -712,4 +691,4 @@ Navbar
   .nav-icon:hover {
     color: var(--clr-primary-8);
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

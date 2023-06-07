@@ -1,39 +1,36 @@
 import Title from "./Title";
-// import StarRating from "./Stars";
 import { featuredTours } from "../data";
 
 const Portfolio = () => {
   return (
     <section className="section" id="tours">
-      <Title firstWord="featured" secondWord="tours" />
+      <Title firstWord="Featured" secondWord="Projects" />
 
       <div className="section-center featured-center">
         {featuredTours.map((tour) => {
-          const { id, image, date, title, text, location, length, price } =
-            tour;
+          const { id, image, icon, title, text, link, github } = tour;
 
           return (
             <article className="tour-card" key={id}>
               <div className="tour-img-container">
                 <img src={image} className="tour-img" alt={title} />
-                <p className="tour-date">{date}</p>
+                <i className="tour-date">{icon}</i>
               </div>
               <div className="tour-info">
                 <div className="tour-title">
                   <h4>{title}</h4>
                 </div>
-                {/* <StarRating /> */}
-                <p>{text}</p>
-                <div className="tour-footer">
-                  <p>
-                    <span>
-                      <i className="fas fa-map"></i>
-                    </span>
-                    {location}
-                  </p>
-                  <p>{length}</p>
-                  <p>{price}</p>
+                <div className="tour-desc">
+                  <p>{text}</p>
                 </div>
+              </div>
+              <div className="tour-footer">
+                <a href={link} target="_blank" rel="noreferrer">
+                  Link
+                </a>
+                <a href={github} target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
               </div>
             </article>
           );
