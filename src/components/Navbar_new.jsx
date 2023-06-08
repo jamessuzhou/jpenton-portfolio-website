@@ -22,35 +22,12 @@ const Navbar_new = () => {
               Home
             </a>
           </li>
-          <li className="nav-item dropdown">
-            <div className="dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                My Portfolio
-              </a>
-              <div
-                className="dropdown-menu"
-                aria-labelledby="dropdownMenuButton"
-              >
-                <a href="#" className="dropdown-item">
-                  ohmyfood
-                </a>
-                <a href="#" className="dropdown-item">
-                  Booki
-                </a>
-                <a href="#" className="dropdown-item">
-                  Best Books of 2022
-                </a>
-              </div>
-            </div>
+          <li className="nav-item active">
+            <a href="#tours" className="nav-link active">
+              Projects
+            </a>
           </li>
+
           <li className="nav-item active">
             <a
               download="James Penton's CV"

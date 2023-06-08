@@ -1,7 +1,8 @@
 import project1 from "./images/project1-ohmyfood.jpg";
 import project2 from "./images/project2-booki.jpg";
 import project3 from "./images/project3-nsc.jpg";
-
+import project4 from "./images/pig_game.jpg";
+import project5 from "./images/backroads_travel.jpg";
 
 import {
   FaHtml5,
@@ -56,7 +57,7 @@ export const featuredTours = [
     github: "https://github.com/jamessuzhou/ohmyfood-website",
   },
   {
-    id: 2,
+    id: 4,
     image: project2,
     icon: [<FaHtml5 />, <FaCss3Alt />],
     title: "Booki",
@@ -65,7 +66,7 @@ export const featuredTours = [
     github: "https://github.com/jamessuzhou/Booki_website",
   },
   {
-    id: 3,
+    id: 2,
     image: project3,
     icon: [<FaHtml5 />, <FaCss3Alt />, <IoLogoJavascript />, <FaBootstrap />],
     title: "NSC technical test",
@@ -73,26 +74,24 @@ export const featuredTours = [
     link: "https://nsc-website-technical-challenge.netlify.app/",
     github: "github.com/jamessuzhou/nsc-website2",
   },
-  // {
-  //   id: 4,
-  //   image: tour4,
-  //   date: "december 5th, 2019",
-  //   title: "kenya highlights",
-  //   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
-  //   location: "kenya",
-  //   length: "20 days",
-  //   price: "$3300",
-  // },
-  // {
-  //   id: 5,
-  //   image: tour5,
-  //   date: "ausgust 26th 2020",
-  //   title: "Taj Mahal Experience",
-  //   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
-  //   location: "kenya",
-  //   length: "6 days",
-  //   price: "$2100",
-  // },
+  {
+    id: 3,
+    image: project4,
+    icon: [<FaHtml5 />, <FaCss3Alt />, <IoLogoJavascript />],
+    title: "Pig Game",
+    text: "An app using a variety of Javascript techniques to generate a dice roll, display, record and update player scores, and then declare a winner. Play state can also be reset",
+    link: "https://pig-game-jpenton.netlify.app/",
+    github: "https://github.com/jamessuzhou/pig-game",
+  },
+  {
+    id: 5,
+    image: project5,
+    icon: [<FaHtml5 />, <FaCss3Alt />, <IoLogoJavascript />, <FaReact />],
+    title: "Backroads Travel",
+    text: "A simple React-based website. Each section is divided into its own component. Fully responsive. ",
+    link: "https://backroads-travel-jpenton.netlify.app/",
+    github: "https://github.com/jamessuzhou/react-backroads-app",
+  },
   // {
   //   id: 6,
   //   image: tour6,

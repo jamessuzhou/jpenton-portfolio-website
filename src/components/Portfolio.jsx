@@ -12,26 +12,28 @@ const Portfolio = () => {
 
           return (
             <article className="tour-card" key={id}>
-              <div className="tour-img-container">
-                <img src={image} className="tour-img" alt={title} />
-                <i className="tour-date">{icon}</i>
-              </div>
-              <div className="tour-info">
-                <div className="tour-title">
-                  <h4>{title}</h4>
+              <a href={link} target="_blank" rel="noreferrer">
+                <div className="tour-img-container">
+                  <img src={image} className="tour-img" alt={title} />
+                  <i className="tour-date">{icon}</i>
                 </div>
-                <div className="tour-desc">
-                  <p>{text}</p>
+                <div className="tour-info">
+                  <div className="tour-title">
+                    <h4>{title}</h4>
+                  </div>
+                  <div className="tour-desc">
+                    <p>{text}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="tour-footer">
-                <a href={link} target="_blank" rel="noreferrer">
-                  Link
-                </a>
-                <a href={github} target="_blank" rel="noreferrer">
-                  GitHub
-                </a>
-              </div>
+                <div className="tour-footer">
+                  <a href={link} target="_blank" rel="noreferrer">
+                    Link
+                  </a>
+                  <a href={github} target="_blank" rel="noreferrer">
+                    GitHub
+                  </a>
+                </div>
+              </a>
             </article>
           );
         })}

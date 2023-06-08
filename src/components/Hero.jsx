@@ -31,7 +31,7 @@ const Hero = () => {
                 Welcome to my portfolio site! I'm a front end developer based in
                 Berkshire, UK. <br />
                 <br />I am passionate about building beautiful, responsive
-                websites that user love.
+                websites that users love.
               </p>
               <p className="text text-muted">
                 Tech Stack: <br />
