@@ -33,7 +33,7 @@ const Navbar_new = () => {
               download="James Penton's CV"
               target="_blank"
               className="nav-link active"
-              href="../src/assets/James Penton Web Dev CV Version 2.0.pdf"
+              href="../src/assets/James Penton Web Dev CV Version 3.0.docx"
             >
               Download my CV
             </a>
