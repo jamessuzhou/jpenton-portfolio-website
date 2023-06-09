@@ -32,7 +32,7 @@ const Navbar_new = () => {
 
           <li className="nav-item active">
             <a
-              download="James Penton's CV"
+              download="JamesPentonCV.pdf"
               target="_blank"
               rel="noreferrer"
               className="nav-link active"
