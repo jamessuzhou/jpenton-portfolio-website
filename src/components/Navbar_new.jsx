@@ -1,4 +1,4 @@
-import pdf from "../src/assets/James Penton Web Dev CV Version 3.0.pdf";
+import pdf from "/src/assets/James Penton Web Dev CV Version 3.0.pdf";
 
 const Navbar_new = () => {
   return (
