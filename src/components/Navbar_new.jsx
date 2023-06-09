@@ -1,3 +1,5 @@
+import pdf from "./src/assets/James Penton Web Dev CV Version 3.0.pdf";
+
 const Navbar_new = () => {
   return (
     <nav className="p-2 navbar navbar-expand-sm navbar-light bg-light ml-auto">
@@ -32,8 +34,9 @@ const Navbar_new = () => {
             <a
               download="James Penton's CV"
               target="_blank"
+              rel="noreferrer"
               className="nav-link active"
-              href="./src/assets/James Penton Web Dev CV Version 3.0.pdf"
+              href={pdf}
             >
               Download my CV
             </a>
